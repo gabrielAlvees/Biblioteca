@@ -1,0 +1,13 @@
+public void emprestarItem =>
+
+O uso do return dentro do bloco if interrompe a execução do método, fazendo com que ele saia imediatamente quando
+um empréstimo é bem-sucedido. Isso é útil porque, uma vez que você encontrou uma correspondência e emprestou o item
+com sucesso, não há necessidade de continuar procurando ou verificar outros itens e usuários.
+
+Se você não utilizar o return e continuar com o restante do código após o loop aninhado, poderá imprimir
+"Erro ao emprestar o livro" mesmo após um empréstimo bem-sucedido. O return garante que o método seja encerrado
+assim que o empréstimo for realizado, evitando a execução desnecessária do restante do código.
+
+biblioteca.adicionarItens(new Livro("Ciclano", "Editoral tal", "20/04/1998", "Livro", "20", 349)); =>
+Note que o método adicionarItens eu crio uma instancia de livro, pois a classe Livro extends de ItensBiblioteca
+sendo assim um objeto da classe ItensBiblioteca.
